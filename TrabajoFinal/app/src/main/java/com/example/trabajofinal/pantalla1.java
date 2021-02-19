@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -27,6 +28,21 @@ public class pantalla1 extends AppCompatActivity {
         busquedadni=findViewById(R.id.busquedadni);
         busquedanombre=findViewById(R.id.busquedaNombre);
         boton=findViewById(R.id.botonBusqueda);
+        boton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(busquedadni.getText().equals("")){
+                    if(busquedanombre.getText().equals("")){
+                        Toast.makeText(pantalla1.this,"Los campos de busqueda estan vacio", Toast.LENGTH_LONG).show();
+                    }else{
+                        db=usdbh.getWritableDatabase();
+                        String nombre=busquedanombre.getText().toString();
+                        String x="SELECT * FROM usuario WHERE nombre=\'"+nombre+"\'";
+                        Cursor c=db.rawQuery(x,null);
+                    }
+                }
+            }
+        });
         verUsuario=findViewById(R.id.verUsuario);
        // verUsuario.setText("");
         db=usdbh.getWritableDatabase();
@@ -37,7 +53,7 @@ public class pantalla1 extends AppCompatActivity {
                 do{
                     String nom=c.getString(1);
                     String dni=c.getString(3);
-                    verUsuario.append("Nombre: "+nom+" DNI: "+dni+"\n");
+                    verUsuario.append("Nombre: "+nom+" DNI: "+dni+"\n\n");
                 }while (c.moveToNext());
                 db.close();
             }
