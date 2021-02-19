@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/gruop"
+        android:layout_width="247dp"
+        android:layout_height="386dp"
+        android:onClick="cambiar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.759">
+
+        <RadioButton
+            android:id="@+id/lunes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cambiar"
+            android:text="@string/lunes" />
+
+        <RadioButton
+            android:id="@+id/martes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cambiar"
+            android:text="@string/martes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioButton
+            android:id="@+id/miercoles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cambiar"
+            android:text="@string/miercoles"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioButton
+            android:id="@+id/jueves"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cambiar"
+            android:text="@string/jueves"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioButton
+            android:id="@+id/viernes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cambiar"
+            android:text="@string/viernes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioButton
+            android:id="@+id/sabado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cambiar"
+            android:text="@string/sabado"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioButton
+            android:id="@+id/domingo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cambiar"
+            android:text="@string/domingo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="207dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="156dp"
+        android:text="@string/dia_de_la_semana"
+        android:textColor="#EF0101"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

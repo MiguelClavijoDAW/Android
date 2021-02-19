@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">32A4</string>
+    <string name="martes">Martes</string>
+    <string name="miercoles">Miercoles</string>
+    <string name="jueves">Jueves</string>
+    <string name="viernes">Viernes</string>
+    <string name="sabado">Sabado</string>
+    <string name="domingo">Domingo</string>
+    <string name="dia_de_la_semana">Dia de la Semana</string>
+    <string name="lunes">Lunes</string>
+</resources>

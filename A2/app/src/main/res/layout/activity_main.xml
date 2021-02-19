@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:background="#2DE4DF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1dp">
+
+        <FrameLayout
+            android:layout_width="133dp"
+            android:layout_height="118dp"
+            android:layout_gravity="bottom|right"
+            android:background="#A67A0C">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="133dp"
+            android:layout_height="118dp"
+            android:layout_gravity="bottom|center"
+            android:background="#A67A0C">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="133dp"
+            android:layout_height="118dp"
+            android:layout_gravity="bottom|left"
+            android:background="#A67A0C">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="133dp"
+            android:layout_height="118dp"
+            android:layout_gravity="right|center_vertical"
+            android:background="#A67A0C">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="133dp"
+            android:layout_height="118dp"
+            android:layout_gravity="center"
+            android:background="#A67A0C">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="133dp"
+            android:layout_height="118dp"
+            android:layout_gravity="left|center_vertical"
+            android:background="#A67A0C">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="133dp"
+            android:layout_height="118dp"
+            android:layout_gravity="right|top"
+            android:background="#A67A0C">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="133dp"
+            android:layout_height="118dp"
+            android:layout_gravity="top|left"
+            android:background="#A67A0C">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="133dp"
+            android:layout_height="118dp"
+            android:layout_gravity="center_horizontal|top"
+            android:background="#A67A0C">
+
+        </FrameLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

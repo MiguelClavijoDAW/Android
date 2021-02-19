@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Formulario">
+
+    <TextView
+        android:id="@+id/textomuestra"
+        android:layout_width="104dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="40dp"
+        android:text="Id del alumno:"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="92dp" />
+
+    <TextView
+        android:id="@+id/idAlumno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="id del alumno"
+        app:layout_constraintStart_toEndOf="@+id/textomuestra"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="85dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="32dp"
+        android:text="Nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textomuestra" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="89dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="32dp"
+        android:text="Apellido 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre" />
+
+    <EditText
+        android:id="@+id/apellido1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="28dp"
+        android:text="Apellido 2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apellido1" />
+
+    <EditText
+        android:id="@+id/Apellido2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="44dp"
+        android:text="Año"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Apellido2" />
+
+    <EditText
+        android:id="@+id/edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="datetime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/agregar"
+        android:layout_width="196dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="80dp"
+        android:background="#9600E6"
+        android:text="Agregar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edad" />
+</androidx.constraintlayout.widget.ConstraintLayout>
